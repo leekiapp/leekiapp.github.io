@@ -24,3 +24,5 @@ body{font-family:"Segoe UI","Noto Sans Arabic","Noto Naskh Arabic",system-ui,san
 .streak{margin:10px auto 0;width:max-content;max-width:100%;background:#fff;border-radius:999px;padding:10px 18px;font-size:15px;font-weight:600;box-shadow:0 2px 8px #b04a8614}
 .install{display:block;margin:16px auto 0}.hint{text-align:center;font-size:13px;color:#8a6a80}
 [hidden]{display:none!important}
+
+.more{display:block;margin:12px auto 0;font-size:14px}
