@@ -30,7 +30,7 @@ function render(){
   b.querySelector(".t").textContent=T[b.dataset.mood];
  });
  $("todayLbl").textContent=T.today;$("only").textContent=T.only;
- $("anotherBtn").textContent=T.another;$("shareBtn").textContent=T.share;
+ $("anotherBtn").textContent=T.another;$("shareBtn").textContent=T.share;$("moreBtn").textContent=T.more;
  $("msg").textContent=current();
  $("streak").textContent=S.streak?T.streak(S.streak):T.streak0;
  $("installBtn").textContent=T.install;$("iosHint").textContent=T.iosHint;
@@ -44,9 +44,12 @@ function toast(t){$("toast").textContent=t;setTimeout(function(){$("toast").text
 $("shareBtn").addEventListener("click",function(){
  var T=I18N[S.lang],txt=T.shareText($("msg").textContent);
  bumpStreak();render();
+ window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank");
+});
+$("moreBtn").addEventListener("click",function(){
+ var T=I18N[S.lang],txt=T.shareText($("msg").textContent);
  if(navigator.share){navigator.share({text:txt}).catch(function(){});return}
- if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){toast(T.copied)},function(){window.open("https://wa.me/?text="+encodeURIComponent(txt))});return}
- window.open("https://wa.me/?text="+encodeURIComponent(txt));
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){toast(T.copied)},function(){})}
 });
 var dp=null;
 window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=e;$("installBtn").hidden=false});
