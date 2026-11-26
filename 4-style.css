@@ -1,0 +1,28 @@
+:root{--pink:#f7c8dc;--pink2:#fde8f1;--lilac:#d9c8f7;--deep:#b04a86;--ink:#4a2a40;--card:#fff}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{font-family:"Segoe UI","Noto Sans Arabic","Noto Naskh Arabic",system-ui,sans-serif;color:var(--ink);background:linear-gradient(170deg,var(--pink2),#efe6fc 70%);min-height:100vh}
+.app{max-width:480px;margin:0 auto;padding:max(18px,env(safe-area-inset-top)) 18px 40px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.brand{margin:0;font-size:30px;color:var(--deep)}
+.lang{border:1px solid var(--lilac);background:#fff;color:var(--deep);border-radius:20px;padding:8px 16px;font:inherit;font-size:14px;min-height:44px;cursor:pointer}
+.greet{font-size:24px;font-weight:700;margin:18px 0 2px}
+.date{margin:0 0 18px;color:#8a6a80;font-size:14px}
+.q{font-size:17px;margin:0 0 10px}
+.moods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mood{border:2px solid transparent;background:#fff;border-radius:18px;padding:12px 6px;font:inherit;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:6px;min-height:84px;cursor:pointer;box-shadow:0 2px 8px #b04a8614}
+.mood .e{font-size:24px}.mood .t{font-size:13px;font-weight:600;text-align:center}
+.mood[aria-checked=true]{border-color:var(--deep);background:linear-gradient(160deg,#ffe3ef,#eadcfc)}
+.card{background:var(--card);border-radius:24px;padding:20px;margin:18px 0 14px;box-shadow:0 6px 24px #b04a8620;border-top:5px solid var(--pink)}
+.cardTop{font-size:13px;color:var(--deep);font-weight:700}
+.msg{font-size:21px;line-height:1.75;margin:12px 0;min-height:72px}
+.only{margin:0 0 10px;font-size:13px;color:#8a6a80}
+.ghost{border:1px solid var(--lilac);background:#faf6ff;color:var(--deep);border-radius:14px;padding:10px 16px;font:inherit;font-size:15px;min-height:44px;cursor:pointer}
+.share{width:100%;border:0;border-radius:18px;padding:16px;font:inherit;font-size:18px;font-weight:700;color:#fff;background:linear-gradient(90deg,#e0679f,#a77be0);min-height:56px;cursor:pointer;box-shadow:0 6px 16px #b04a8640}
+.share:active{transform:scale(.98)}
+.toast{min-height:22px;text-align:center;color:var(--deep);font-size:14px;margin:10px 0 0}
+.streak{margin:10px auto 0;width:max-content;max-width:100%;background:#fff;border-radius:999px;padding:10px 18px;font-size:15px;font-weight:600;box-shadow:0 2px 8px #b04a8614}
+.install{display:block;margin:16px auto 0}.hint{text-align:center;font-size:13px;color:#8a6a80}
+[hidden]{display:none!important}
+
+.more{display:block;margin:12px auto 0;font-size:14px}

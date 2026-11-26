@@ -1,0 +1,16 @@
+window.I18N = {
+ar:{dir:"rtl",app:"ليكي",greet:"صباح الفل يا قمر 🌸",mood:"إيه مزاجك النهارده؟",
+ support:"محتاجة دعم",laugh:"محتاجة أضحك",cheer:"محتاجة تشجيع",
+ today:"رسالة النهارده",only:"اتكتبت ليكي انتِ بس ✨",another:"رسالة تانية 🔄",share:"💌 ابعتيها لصاحبتك",
+ streak:n=>`🔥 ${n} ${n===1?"يوم":n<=10?"أيام":"يوم"} ورا بعض.. برافو عليكي!`,streak0:"ابدئي سلسلتك النهارده 🔥",
+ copied:"اتنسخت! ابعتيها لصاحبتك 💗",more:"طريقة تانية للمشاركة / نسخ",shareText:(m)=>`${m}\nhttps://leekiapp.github.io/`,lang:"English",
+ install:"ضيفي ليكي على شاشتك 📲",iosHint:"من متصفح سفاري: زرار المشاركة ثم «إضافة إلى الشاشة الرئيسية»",
+ pick:"اختاري مزاجك وهتطلعلك رسالة"},
+en:{dir:"ltr",app:"Leeki",greet:"Good morning, gorgeous 🌸",mood:"How are you feeling today?",
+ support:"Need support",laugh:"Need a laugh",cheer:"Need encouragement",
+ today:"Today's message",only:"Written just for you ✨",another:"Another one 🔄",share:"💌 Send it to a friend",
+ streak:n=>`🔥 ${n} day${n===1?"":"s"} in a row. Proud of you!`,streak0:"Start your streak today 🔥",
+ copied:"Copied! Send it to a friend 💗",more:"Other ways to share / copy",shareText:(m)=>`${m}\nhttps://leekiapp.github.io/`,lang:"العربية",
+ install:"Add Leeki to your home screen 📲",iosHint:"In Safari: tap Share, then “Add to Home Screen”",
+ pick:"Pick a mood and a message will appear"}};
+
